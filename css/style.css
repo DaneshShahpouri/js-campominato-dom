@@ -119,5 +119,17 @@ fine titles */
     background: #0073ff;
 }
 
+.bomb{
+    background: #ff0000;
+}
+
+
+#result{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+
 /*--------------------------
 fine grid */

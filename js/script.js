@@ -8,6 +8,7 @@ let gameover;
 let win;
 
 const result = document.getElementById('result');
+const mode = document.getElementById('mode');
 
 
 function bombGenerator(){
@@ -147,6 +148,13 @@ btnPlay.addEventListener('click', ()=>{
     //Crea una nuova griglia;
     createGrid(difficult.value);
     gridArr = document.querySelectorAll('.square');
+
+    if(mode.value=='cheat'){
+        for(let i = 0 ; i < bombsArr.length; i++){
+            gridArr[parseInt(bombsArr[i] - 1)].style.background='rgba(235, 8, 8, 0.336)';
+            //console.log(bombsArr)
+        }
+    }
     
    
 })
